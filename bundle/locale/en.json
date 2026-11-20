@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Quote selection shortcut",
+    "description": "Select text anywhere on the page and press ⌘L to quote it into the current conversation composer, exactly like the selection quote button; the web build defaults to ⌥⌘L and the binding can be changed in Settings → Shortcuts. It refuses with a reason when nothing is selected, no conversation can take input, or the composer is sending. It reads selections in the page itself, not inside iframes."
+  }
+}
