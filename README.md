@@ -68,6 +68,16 @@ DeepSeek Harness（DSH）的个人插件合集。目前包含一个插件：**�
 - 选区取自页面 DOM 文本，不保留原文档的格式或行号。
 - 插入依赖输入框处于可编辑状态；正在发送、命令裁决期间会拒绝并提示。
 
+## 发布新版本
+
+市场索引把安装固定在一个提交上，所以每次改动都要走完这三步：
+
+1. 改 `bundle/`，并在 `bundle/package.json` 里升 `version`；
+2. 提交后取提交号：`git rev-parse HEAD`；
+3. 把 `index.json` 里 `versions[0]` 的 `version`、`publishTimestamp`、`source.commit` 换成新值，再提交推送。
+
+索引更新后，已安装的用户重新安装一次即可拿到新版本。
+
 ## 目录
 
 ```text
