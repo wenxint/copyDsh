@@ -1,0 +1,97 @@
+{
+  "format": 1,
+  "title": {
+    "en": "DSH Copy Plugins",
+    "zh": "DSH 复制类插件"
+  },
+  "description": {
+    "en": "DeepSeek Harness extensions that move selected text into the conversation.",
+    "zh": "把页面上选中的文字直接放进对话输入框的 DeepSeek Harness 扩展。"
+  },
+  "metadata": {
+    "categories": {
+      "development": {
+        "title": {
+          "en": "Developer tools",
+          "zh": "开发工具"
+        }
+      }
+    },
+    "labels": {
+      "quote": {
+        "title": {
+          "en": "Quote",
+          "zh": "引用"
+        }
+      },
+      "shortcut": {
+        "title": {
+          "en": "Shortcuts",
+          "zh": "快捷键"
+        }
+      }
+    },
+    "sortKeys": {
+      "updated": {
+        "title": {
+          "en": "Updated",
+          "zh": "更新时间"
+        },
+        "order": "desc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "@local/dsh-plugin-quote-shortcut",
+      "title": {
+        "en": "Quote selection shortcut",
+        "zh": "选中引用快捷键"
+      },
+      "description": {
+        "en": "Select text anywhere in the page and press ⌘L to quote it into the current conversation composer; the web build defaults to ⌥⌘L.",
+        "zh": "在页面上选中一段文字后按 ⌘L，把这段文字作为引用插入当前会话的输入框；网页版默认是 ⌥⌘L。"
+      },
+      "icon": "bundle/icon.svg",
+      "author": "wenxint",
+      "homepage": "https://github.com/wenxint/copyDsh",
+      "repository": {
+        "url": "https://github.com/wenxint/copyDsh.git",
+        "directory": "bundle"
+      },
+      "metadata": {
+        "category": "development",
+        "keywords": [
+          "quote",
+          "selection",
+          "shortcut",
+          "composer",
+          "cursor",
+          "add to chat"
+        ],
+        "labels": [
+          "quote",
+          "shortcut"
+        ],
+        "sortKeys": {
+          "updated": 1795180477
+        }
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1795180477,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/wenxint/copyDsh.git",
+            "commit": "5d82a8325a9404918c40de79a3205a7b45dc2e1b",
+            "path": "bundle"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.5 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}
